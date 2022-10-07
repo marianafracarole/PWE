@@ -3,44 +3,88 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"> 
   <title>HOME - IFSP - PIRITUBA </title>
-  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/slide.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-  
   
 <body>
 
-  <header id="cabecalho"> 
-    <nav class="menu"> 
-      <object data="menu.html" width='100%' height='70px'></object>
-    </nav>
-  </header>
- 
-  <main>
-  <h2 id="palestra">Acontece no IFSP!</h2>
-  <div>
-    <img class="palestra" src= 'https://raw.githubusercontent.com/pwe-redes/pwe_imagens/master/SEJA_RARO.jpg' width='50%' height='50%' />
-  <figure>
-   <figcaption>Palestra no IF</figcaption> <p class="pontilhado"> Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
-</figure>
-  </aside>
+<header id="cabecalho"> 
+  <nav class="menu"> 
+    <object data="menu.html" width='100%' height='200px'></object>
+  </nav>
+</header>
 
+<div class="slide-container">
 
-  <section id="desafios-inovacao">
-    
-    <h2>Conheça os desafios de inovação</h2>
-   <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
+  <div class="mySlides fade" style="display: block;">
+    <div class="numbertext">1 / 2</div>
+    <img src="imagens/agenda.png" style="width: 100%" align="center">
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">2 / 4</div>
+    <img src="imagens/covid.jpg" style="width: 100%" align="center">
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">3 / 4</div>
+    <img src="imagens/vest.jpg" style="width: 100%" align="center">
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">4 / 4</div>
+    <h1 align="center">Conheça os desafios de inovação</h1>
+    <div class="videoWrapper">
+    <p align="center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    </div>
+
+  </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+<br>
+  
+  <div style="text-align: center">
+    <span class="dot active" onclick="currentSlide(1)"></span>
+    <span class="dot active" onclick="currentSlide(2)"></span>
+    <span class="dot active" onclick="currentSlide(3)"></span>
+    <span class="dot active" onclick="currentSlide(4)"></span>
+  </div>
+  
+  <div class="grid-container">
+   
+  <div class="grid-item"><img src="imagens/eleicoes.jpg" alt="eleições" width="60%" height="80%">
+  <br /><strong>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</strong>
+  <br />Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</div>
+  <div class="grid-item"><img src="imagens/snct.jpg" alt="SNCT" width="60%" height="80%">
+  <br /><strong>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</strong>
+  <br />Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</div>
+  <div class="grid-item"><img src="imagens/residencia.png" alt="Residência" width="40%" height="70%">
+  <br /><strong>IFSP oferece bolsa aos voluntários da Residência Pedagógica</strong>
+  <br />Bolsa de R$ 400,00 será paga pelo período de três meses</div>
+  <div class="grid-item"><img src="imagens/maratona.jpeg" alt="Maratona" width="40%" height="70%">
+  <br /><strong>Inscrições abertas para a III Maratona InterIF</strong>
+  <br />Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</div>
+ </div>
   
 </main>
 
 <footer>
   <br> <br>
 
-  <nav><object width="100%" data="rodape.html"></object> </nav>
+  <nav><object width="100%" data="rodape.html"></object> 
+</nav>
+  
 </footer>
+  
+  <script src="javascript/slide.js"></script>
+  
 </body>
 
 </html>

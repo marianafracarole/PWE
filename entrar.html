@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html>
   <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="imagens/logoifsp.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Entrar - IFSP - Pirituba</title>
-  <link rel="stylesheet" type="text/css" href="css/forms.css"
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="css/login.css" rel="stylesheet" type="text/css"/>
   </head>
-  <body>
-    
-  <nav>
-  <object width="100%" height="65px" data="menu.html"></object>
+  
+  <body class="text-center">
+
+  <nav id="menu">
+    <object width="100%" height="265px" data="menu.html"></object>
   </nav>
 
-  <img src="imagens/Logo.jpg" alt="cabecalho" />
-    
-  <h1>Entrar</h1>
+  <form class="form-signin">
+    <img class="mb-3" src="imagens/ifsp.png" alt="logo ifsp" width="72" height="72")>
+    <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
+      <label for="inputEmail" class="sr-only">Endereço de email</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Seu email" required autofocus>
+      <label for="inputPassword" class="sr-only">Senha</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+    <div class="checkbox mb-3">
+      <label>
+    <input type="checkbox" value="remember-me"> Lembrar de mim
+      </label>
+  </div>
+  <div>
+    <a href="#">Esqueci a senha</a>
+  </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    <p class="mt-5 mb-3 text-muted">© 2022</p>
+  </form>
 
-<div>
-  <form action="#">
-    <label for="email">Usuário:</label>
-    <input type="email" id="email" name="email" required/><br><br>
-    <label for="pwd" required>Senha:</label>
-    <input type="password" id="pwd" name="pwd" required/><br><br>
-    <input type="submit" value="Entrar"> <a href="#"/>Esqueci a senha</a>
-</div>
-</form><br><br>
-    
-  <a href="https://www.facebook.com/ifsppirituba"><img src="https://raw.githubusercontent.com/pwe-redes/pwe_imagens/77770610c0de515c6150e899d70445ff3d25094d/facebook.png" width="40"></a>
-
-  <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p><br><br>
-    
-  </body>
-  
-</html>
+  <nav id="rodape">
+    <object width="100%" height="265px" data="rodape.html"></object>
+  </nav>

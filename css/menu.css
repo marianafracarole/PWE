@@ -1,0 +1,59 @@
+div#menuhor {
+	background-color: green;
+}
+
+
+div#menuhor ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+div#menuhor li {
+  float: left;
+}
+
+div#menuhor li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div#menuhor li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+div#menuhor li.dropdown {
+  display: inline-block;
+}
+
+div#menuhor .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+div#menuhor .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+div#menuhor .dropdown-content a:hover {background-color: #bfbfbf;}
+
+div#menuhor .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div#menuhor li#about {
+	float:right
+}
